@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'private_delegate/version'
+require 'privately_delegate/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "private_delegate"
-  spec.version       = PrivateDelegate::VERSION
+  spec.name          = "privately_delegate"
+  spec.version       = PrivatelyDelegate::VERSION
   spec.authors       = ["Bernardo Farah"]
   spec.email         = ["ber@bernardo.me"]
 
   spec.summary       = "A shorthand for delegating methods privately"
   spec.description   = "A shorthand for delegating methods privately"
-  spec.homepage      = "https://github.com/berfarah/private_delegate"
+  spec.homepage      = "https://github.com/berfarah/privately_delegate"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test)/}) }

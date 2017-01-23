@@ -1,4 +1,4 @@
-# PrivateDelegate
+# Privately Delegate
 
 Keep your delegations away from prying eyes / objects with this gem.
 
@@ -7,7 +7,7 @@ Keep your delegations away from prying eyes / objects with this gem.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'private_delegate'
+gem 'privately_delegate'
 ```
 
 And then execute:
@@ -16,14 +16,14 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install private_delegate
+    $ gem install privately_delegate
 
 ## Usage
 
 ```rb
 class User
   has_one :address
-  private_delegate :zip_code, to: :address
+  privately_delegate :zip_code, to: :address
 end
 
 # ... later
@@ -39,7 +39,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/berfarah/private_delegate.
+Bug reports and pull requests are welcome on GitHub at https://github.com/berfarah/privately_delegate.
 
 
 ## License

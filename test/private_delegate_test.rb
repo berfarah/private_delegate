@@ -1,7 +1,7 @@
 require 'test_helper'
 require 'minitest/spec'
 
-class PrivateDelegateTest < Minitest::Test
+class PrivatelyDelegateTest < Minitest::Test
   extend Minitest::Spec::DSL
 
   let(:subject) do
@@ -10,7 +10,7 @@ class PrivateDelegateTest < Minitest::Test
         Struct.new(:baz).new
       end
 
-      private_delegate :baz, to: :foo
+      privately_delegate :baz, to: :foo
     end
   end
 
